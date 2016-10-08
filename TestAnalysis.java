@@ -4,9 +4,11 @@ public class TestAnalysis{
 
     }
 
-    private int analyzeText(String input){
+    private double analyzeText(String input){
         String temp = "";
         int mood = 0;
+        int total = 0;
+        double happiness = 0.0;
         double result = 0.0;
         while(input.length() > 0){
             if(input.indexOf('.') < input.indexOf('!') && input.indexOf('.') < input.indexOf('?')){
@@ -26,9 +28,12 @@ public class TestAnalysis{
                 input = "";
             }
             //process temp using Microsoft's API, return double to result
-
+            //if process returns happy, mood++
+            //else if process returns sad, mood--
+            total++;
         }
 
-        return mood;
+        happiness = (double)mood/(double)total;
+        return happiness;
     }
 }
