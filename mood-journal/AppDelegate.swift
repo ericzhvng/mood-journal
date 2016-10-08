@@ -2,8 +2,10 @@
 //  AppDelegate.swift
 //  mood-journal
 //
-//  Created by Richard Ju on 10/8/16.
+//  Created by Andrew Liu, Eric Wang, Eric Zhang, and Richard Ju on 10/8/16.
 //  Copyright © 2016 mood-journal. All rights reserved.
+//
+//  Created at the MHacks 8 (University of Michigan) hackathon.
 //
 
 import UIKit
